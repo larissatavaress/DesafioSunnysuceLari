@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* CABEÇALHO */
+header{
+    background-image: url(imagens/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 610px;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+header .seta{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    left: -2%;
+}
+
+nav {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fraunces', serif;
+}
+
+nav .logo-cabeçalho {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+    cursor: context-menu;
+    float: left;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 600;
+    font-family: 'Barlow', serif;
+    
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    transition: 0.2s; 
+    padding: 1em;
+    font-size: 1em;
+    color: #fff;
+}
+
+.contato{
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: none;
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* BURGUER*/
+#hamburguer {
+    position: absolute;
+    top: -100px;
+}
+
+nav .iconb {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav .iconb .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+
+
+/* PRIMEIRA PARTE - LARANJA */
+.laranja{
+    background-image: url(./imagens/desktop/image-header.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    margin-top: -20vh;
+}
+
+.laranja h1{
+
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    left: 35%;
+    width: fit-content;
+    letter-spacing: 8px;
+    top: 10%;
+    scale: 2;
+}
+
+.seta{
+    position: relative;
+    left: 50%;
+    top: 43%;
+    z-index: 1;
+}
+
+/* OVO */
+.ovo{
+    width: 100%;
+    background-color: white;
+    height: 80vh;
+    display: flex;
+
+    
+}
+
+.ovo img{
+    position: relative;
+    width: 50%;
+    justify-content: flex-end;
+    margin-left: 45vh;
+}
+
+.ovo-textos{
+    position: relative;
+    left: 20vh;
+    top: 20vh;
+}
+
+.ovo-textos h1{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.ovo-p {
+    margin-bottom: 30px;
+    color: hsl(210, 4%, 67%);
+    line-height: 25px;
+}
+
+.ovo-autor{
+    margin-top: 2.5%;
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+    width: 100px;
+    font-size: 17px;
+}
+
+
+/* TAÇA */
+.taça{ 
+    background-color: white;
+    width: 100%;
+    display: flex;
+    height: 80vh;
+}
+
+.taça img{
+    position: relative;
+    width: 50%;
+    
+
+}
+
+.taça-textos{
+    position: relative;
+    left: 20vh;
+    top: 20vh;
+}
+
+.taça-textos h1{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.taça-p{
+    margin-bottom: 30px;
+    color: hsl(210, 4%, 67%);
+    line-height: 25px;
+}
+
+.taça-autor{
+    margin-top: 2.5%;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    font-size: 17px;
+    width: 100px;
+}
+
+
+/* FRUTAS */
+#frutas{
+    display: flex;
+    width: 100%;
+}
+
+/* CEREJA */
+.cereja{
+    background-image: url(imagens/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 50%;
+    height: 80vh;
+}
+
+.cereja-textos{
+    color: hsl(167, 40%, 24%);
+    position: relative;
+    top: 65%;
+}
+
+.cereja-textos h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.cereja-textos p{
+    line-height: 25px;
+}
+
+/* LARANJA 2 */
+.laranja-parte2{
+    background-image: url(imagens/desktop/image-photography.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 50%;
+    height: 80vh;
+
+}
+
+.laranja2-texto{
+    color: hsl(167, 40%, 24%);
+    position: relative;
+    top: 65%;
+}
+
+.laranja2-texto h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+}
+
+.laranja2-texto p{
+    line-height: 25px;
+
+}
+
+/* CLIENTES */
+#CLIENTES{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    height: 90vh;
+    
+}
+
+#CLIENTES h1{
+    letter-spacing: 8px;
+    white-space: nowrap;
+    position: relative;
+    top: 20%;
+    left: 36%;
+    font-family: 'Fraunces', serif;
+    color: hsla(0, 0%, 0%, 0.267);
+    font-size: 130%;
+}
+
+.clientes{
+    display: flex;
+    position: relative;
+    left: -23%;
+    top: 30%;
+}
+
+.clientes div{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 50vh;
+}
+
+.clientes div p{
+    margin-bottom: 50px;
+    line-height: 25px;
+
+}
+
+.c1 p:last-child, .c2 p:last-child, .c3 p:last-child{
+    color: rgba(0, 0, 0, 0.39);
+}
+
+
+.clientes img{
+    scale: 0.6;
+    border-radius: 50%;
+}
+
+.clientes h3{
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+/* GALERIA IMAGENS */
+.galeria-imagens{
+    width: 100%;
+    display: flex;
+}
+
+.galeria-imagens img{
+    width: 25%;
+}
+
+/* FOOTER */
+footer{
+    background-color: hsl(168, 85%, 79%);
+    height: 50vh;
+    text-align: center;
+}
+
+.logo-footer{
+    margin-top: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color:hsl(168, 34%, 41%);
+}
+
+footer a:hover{
+    color: hsl(167, 41%, 7%);
+}
+
+/* LINKS IGUAIS AO CABEÇALHO - FOOTER */
+#links a{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#links{
+    margin-top: 40px;
+}
+
+/* REDES SOCIAIS - FOOTER */
+#redes-sociais{
+    margin-top: 100px;
+}
+
+#redes-sociais a{
+    margin-right: 12px;
+    margin-left: 12px;
+    
+}
+
+@media screen and (max-width: 768px){
+
+    header .seta{
+        position: relative;
+        top: 50px;
+    }
+
+    nav ul {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to bottom, white, aliceblue);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .logo-cabeçalho {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav ul a {
+        font-size: 20px;
+        color: #676767;
+    }
+
+    .contato{
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+        font-size: 0.8em;
+        border: none;
+        width: 120px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    nav :checked~ul {
+        bottom: 0;
+    }
+
+    nav .iconb {
+        display: block;
+        z-index: 10;
+    }
+
+    nav :checked~.iconb .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+        background-color: black;
+    }
+
+    nav :checked~.iconb .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+        background-color: black;
+    }
+
+    nav :checked~.iconb .line:nth-child(2) {
+        opacity: 0;
+        background-color: black;
+    }
+
+
+    .laranja{
+        background-position: center;
+        width: 100vw;
+    
+        
+
+    }
+
+    .laranja h1{
+        width: 50vw;
+        margin: 0;
+        text-align: center;
+        left: 28%;
+        position: relative;
+        font-size: 15px;
+        
+    
+
+    }
+
+    .laranja svg{
+        position: relative;
+        left: 45%;
+    }
+
+    .ovo{
+        flex-direction: column-reverse;
+    }
+
+    .ovo img{
+        position: relative;
+        left: -30%;
+        scale: 2.2;
+        top: 20%;
+    }
+
+    .ovo-textos{
+        position: relative;
+        text-align: center;
+        margin-left: -23%;
+        top: 68%;
+        width: 100vw;
+        font-size: smaller;
+    }
+
+    .taça{
+        flex-direction: column-reverse;
+    }
+
+    .taça img{
+        position: relative;
+        scale: 2.2;
+        top: 65%;
+        left: 20%;
+
+    }
+
+    .taça-textos{
+        text-align: center;
+        position: relative;
+        top: 170vh;
+        left: -0.5px;
+        width: 100vw;
+        font-size: smaller;
+    
+    }
+
+    #frutas{
+        display: block;
+        margin-top: 150vh;
+        
+    }
+
+    .cereja{
+        width: 100vw;
+        background-position: center;
+    }
+
+    .laranja-parte2{
+        width: 100vw;
+        background-position: center;
+    }
+    #CLIENTES h1{
+        position: relative;
+        left: 15%;
+        font-size: 100%;
+    }
+
+    .clientes{
+        display: grid;
+        margin-left: -35%;
+        width: 100vw;  
+        
+
+
+}
+
+    .galeria-imagens{
+        margin-top:150vh;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 20fr 20fr;
+        width: 100vw;
+    
+}
+
+    .galeria-imagens img{
+    width: 100%;
+    margin-left: -18%;
+
+}
+
+    footer{
+        width: 98vw;
+}
+
+    #links a{
+    
+        white-space: nowrap;
+    
+}
+}
+
